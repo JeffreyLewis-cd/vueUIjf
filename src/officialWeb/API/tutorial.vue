@@ -1,0 +1,86 @@
+<template>
+  <div class="jf-tutorial-page">
+    <div class="jf-tutorial-nav">
+      <router-link to="/OfficalWeb" class="jf-tutorial-nav-logo">
+        <img src="../../assets/pictures/logo_vueUI_jf-02.png" class="jf-tutorial-nav-logo-pic">
+      </router-link>
+      <p class="offical-top-components">组件</p>
+
+    </div>
+    <div class="jf-tutorial-body">
+      <div class="jf-tutorial-body-box">
+        <div  class="jf-tutorial-body-left">
+          <h4 class="jf-tutorial-title4">开发指南</h4>
+          <ul>
+            <li v-for="(devItem,index) in devIntro" :key="index" class="jf-tutorial-ul-li"
+             :class="{'jf-tutorial-ul-li-active':leftItem_intro==index}" @click="introItem(index)">{{devItem.title}}</li>
+          </ul>
+
+        </div>
+        <div  class="jf-tutorial-body-right">
+          <Introduce v-show="leftItem_intro===0"></Introduce>
+          <Install v-show="leftItem_intro===1"></Install>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="jf-tutorial-footer"></div>
+  </div>
+
+</template>
+
+<script type="text/ecmascript-6">
+//  导入正文右侧详细内容组件--install-page
+  import Introduce from "../API/apiComponents/devIntro/introduce.vue"
+  import Install from "../API/apiComponents/install/install.vue"
+
+  export default{
+    name: "",
+    data(){
+      return {
+        devIntro:[
+          {
+            title:"介绍",
+            field:"introduce"
+          },
+          {
+            title:"安装",
+            field:"introduce"
+          },
+          {
+            title:"快速上手",
+            field:"introduce"
+          },
+          {
+            title:"更新日志",
+            field:"introduce"
+          },
+        ],
+        leftItem_intro:0,
+      }
+    },
+    components: {
+      Introduce,
+      Install,
+    },
+    mounted: function () {
+
+    },
+    methods: {
+      introItem(index){
+        this.$set(this.$data,"leftItem_intro",index);
+      }
+    },
+    computed: {}
+
+  }
+
+</script>
+
+<style lang="scss" scoped>
+  @import "../../assets/css/initStyle.css";
+  @import "../../assets/css/apiStyle.scss";
+
+
+</style>

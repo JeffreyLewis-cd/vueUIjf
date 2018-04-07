@@ -1,0 +1,111 @@
+//JiangFan_2018-04-05
+
+//API-tutorial
+//样式公共变量
+$titleColor4:#586F86;
+$fontColorBlue:#31B7F7;
+$linkColorBlue:#6190E8;
+
+
+//顶部导航样式表
+  .jf-tutorial-nav {
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 5px 15px #E5E3E3;
+    .jf-tutorial-nav-logo{
+      display: block;
+      height:80px;
+      width:80px;
+      margin-left: 60px;
+      float: left;
+      //background:url("../../assets/pictures/logo_vueUI_jf-02.png") no-repeat 5px 10px;
+      //background-size: contain;
+      .jf-tutorial-nav-logo-pic{
+        height:80px;
+        width:100px;
+      }
+    }
+    .offical-top-components{
+      float: right;
+      height:40px;
+      line-height: 40px;
+      width:100px;
+      text-align: center;
+      margin-right: 60px;
+      cursor:pointer;
+      font-weight: 700;
+      color:#42B884
+    }
+  }
+
+
+//中间正文样式表
+  .jf-tutorial-body {
+    height: 900px;
+    width: 100%;
+    background:rgba(245,245,245,0.6);
+    padding:50px 0;
+
+    .jf-tutorial-body-box{
+      height: 900px;
+      width: 90%;
+      margin:0 auto;
+      background: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      color:$titleColor4;
+      //中间正文--左侧导航条
+      .jf-tutorial-body-left{
+        width:11%;
+        height:900px;
+        //background:rgba(90,211,148,0.3);
+        float: left;
+        padding:0 2%;
+        .jf-tutorial-title4{
+          color: $titleColor4;
+          margin: 15px 0;
+        }
+        .jf-tutorial-ul-li{
+          //border:1px solid blue;
+          height:36px;
+          line-height: 36px;
+          cursor:pointer;
+        }
+        .jf-tutorial-ul-li-active{
+          color:$fontColorBlue;
+          font-weight: 700;
+        }
+      }
+
+      //中间正文--右侧详细内容
+      .jf-tutorial-body-right{
+        width:85%;
+        height:900px;
+        //background:rgba(50,12,12,0.1);
+        float: left;
+
+        .apiComponentsDetail{
+          padding:0 2%;
+
+
+        }
+      }
+
+      //插入html元素，比如<a>标签
+      .linkToOutside{
+        text-decoration: none !important;
+        color:$linkColorBlue;
+      }
+
+    }
+  }
+
+
+  //页面底部
+  .jf-tutorial-footer {
+    height: 100px;
+    width: 100%;
+    background:rgba(255,73,73,0.3)
+  }
+
+
