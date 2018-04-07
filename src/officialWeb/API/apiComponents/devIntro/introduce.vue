@@ -11,7 +11,10 @@
       <li v-for="(broItem,index) in browsers" :key="index" v-html="broItem.broItem"></li>
     </ul>
     <H3>浏览器支持</H3>
-    <p>如果您在使用 <code>VUEUI-JF</code> 时遇到问题，或者有好的建议，欢迎给我们提 </p>
+    <p>如果您在使用 <code>vueUIjf</code> 时遇到问题，或者有好的建议，欢迎给我们提
+      <a class="linkToOutside" href="https://github.com/JiangFan6/vueUIjf/issues">Issues</a>或者
+      <a class="linkToOutside" href="https://github.com/JiangFan6/vueUIjf/pulls">Pull requests</a>
+    </p>
   </div>
 
 </template>
