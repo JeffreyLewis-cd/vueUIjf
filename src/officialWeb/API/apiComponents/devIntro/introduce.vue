@@ -1,8 +1,13 @@
 <template>
   <div class="apiComponentsDetail introduce-page">
-    <H3>vueuijf 组件库介绍</H3>
-    <p>vueuijf 是一款基于Vue.js 2.0 的前端UI组件库，只用于学习交流，非商业用途；主要的灵感借鉴于monkeyWang的VV-UI,在此表示感谢！</p>
-    <H3>vueuijf 特性</H3>
+    <H3 class="jf-devIntro-title">vueUIjf 组件库介绍</H3>
+    <p>vueUIjf 是一款基于Vue.js 2.0 的前端UI组件库，只用于学习交流，非商业用途；
+      主要的灵感借鉴于
+      <a class="linkToOutside" href="https://github.com/monkeyWangs">monkeyWang</a>
+      的
+      <a class="linkToOutside" href="https://vv-ui.github.io/VV-UI/#/">VV-UI</a>,
+      在此表示感谢！</p>
+    <H3>vueUIjf 特性</H3>
     <ul>
       <li v-for="(proItem,index) in properties" :key="index">{{proItem.proItem}}</li>
     </ul>
@@ -36,15 +41,15 @@
             proItem: "提供友好的 API，可灵活的使用组件"
           },
         ],
-        browsers:[
+        browsers: [
           {
-            broItem:"现代浏览器和 IE9 及以上"
+            broItem: "现代浏览器和 IE9 及以上"
           },
           {
-            broItem:"<a class='linkToOutside' href='http://electron.atom.io/'>Electron</a>"
+            broItem: "<a class='linkToOutside' href='http://electron.atom.io/'>Electron</a>"
           },
           {
-            broItem:'<a class="linkToOutside" href="http://nwjs.io">NW.js</a>'
+            broItem: '<a class="linkToOutside" href="http://nwjs.io">NW.js</a>'
           },
         ]
       }
@@ -60,7 +65,8 @@
 
 </script>
 
-<style lang="scss" >
+<style lang="scss">
   @import "../../../../assets/css/apiStyle.scss";
+
 
 </style>

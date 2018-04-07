@@ -5,6 +5,7 @@
 $titleColor4:#586F86;
 $fontColorBlue:#31B7F7;
 $linkColorBlue:#6190E8;
+$lineColorLBlue:#C5D9E8;
 
 
 //顶部导航样式表
@@ -61,14 +62,15 @@ $linkColorBlue:#6190E8;
         //background:rgba(90,211,148,0.3);
         float: left;
         padding:0 2%;
+        font-size: 14px;
         .jf-tutorial-title4{
           color: $titleColor4;
-          margin: 15px 0;
+          margin: 10px 0;
         }
         .jf-tutorial-ul-li{
           //border:1px solid blue;
-          height:36px;
-          line-height: 36px;
+          height:32px;
+          line-height: 32px;
           cursor:pointer;
         }
         .jf-tutorial-ul-li-active{
@@ -86,8 +88,21 @@ $linkColorBlue:#6190E8;
 
         .apiComponentsDetail{
           padding:0 2%;
+          .jf-devIntro-title{
+            border-bottom: 1px solid $lineColorLBlue;
+            height:36px;
+          }
 
 
+        };
+        pre{
+          margin: 15px 0;
+          padding: 15px;
+          background-color: #f7f7f7;
+          overflow: auto;
+        }
+        pre code{
+          font-size:14px;
         }
       }
 

@@ -20,6 +20,7 @@
         <div  class="jf-tutorial-body-right">
           <Introduce v-show="leftItem_intro===0"></Introduce>
           <Install v-show="leftItem_intro===1"></Install>
+          <QuickStart v-show="leftItem_intro===2"></QuickStart>
 
         </div>
 
@@ -34,6 +35,7 @@
 //  导入正文右侧详细内容组件--install-page
   import Introduce from "../API/apiComponents/devIntro/introduce.vue"
   import Install from "../API/apiComponents/install/install.vue"
+  import QuickStart from "../API/apiComponents/quickStart/quickStart.vue"
 
   export default{
     name: "",
@@ -63,6 +65,7 @@
     components: {
       Introduce,
       Install,
+      QuickStart
     },
     mounted: function () {
 
