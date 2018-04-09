@@ -1,7 +1,7 @@
 <template>
   <div class="jf-tutorial-page">
     <div class="jf-tutorial-nav">
-      <router-link to="/OfficalWeb" class="jf-tutorial-nav-logo">
+      <router-link to="/" class="jf-tutorial-nav-logo">
         <img src="../../assets/pictures/logo_vueUI_jf-02.png" class="jf-tutorial-nav-logo-pic">
       </router-link>
       <p class="offical-top-components">组件</p>

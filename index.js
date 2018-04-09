@@ -5,7 +5,7 @@
  * @author monkeywang
  * Date: 17/11/9
  */
-import jfButton from './components/button/index';
+import jfButton from './src/components/button/index';
 
 
 const components = [
