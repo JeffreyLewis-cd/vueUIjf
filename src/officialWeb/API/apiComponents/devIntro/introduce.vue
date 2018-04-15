@@ -67,6 +67,9 @@
 
 <style lang="scss">
   @import "../../../../assets/css/apiStyle.scss";
+  .introduce-page{
+    /*height:430px;*/
+  }
 
 
 </style>

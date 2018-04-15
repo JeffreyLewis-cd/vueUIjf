@@ -68,12 +68,20 @@
       QuickStart
     },
     mounted: function () {
-
+      this.autoBodyHeight() ;    //屏幕高度自适应--针对body部分
     },
     methods: {
       introItem(index){
         this.$set(this.$data,"leftItem_intro",index);
+      },
+      //屏幕高度自适应--针对body部分
+      autoBodyHeight(){
+        let screenH=window.innerHeight;
+        let bodyRight=document.getElementsByClassName("jf-tutorial-body-right")[0];
+        let bodyH=(screenH-80-100-100)+"px";
+        bodyRight.style.minHeight=bodyH;
       }
+
     },
     computed: {}
 

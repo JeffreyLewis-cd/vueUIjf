@@ -1,0 +1,4 @@
+1. webstorm new一个scss文件
+2. 浏览器导航页面-icon
+3. vue_  npm run build对background url image异常反应
+4.  import { jfButton } from 'vueuijf'不成功--25:14-22 "export 'jfButton' was not found in 'vueuijf'（export default； 去掉default）

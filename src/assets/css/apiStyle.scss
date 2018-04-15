@@ -10,7 +10,7 @@ $lineColorLBlue:#C5D9E8;
 
 //顶部导航样式表
   .jf-tutorial-nav {
-    height: 80px;
+    height:80px;
     width: 100%;
     box-shadow: 0 5px 15px #E5E3E3;
     .jf-tutorial-nav-logo{
@@ -42,13 +42,10 @@ $lineColorLBlue:#C5D9E8;
 
 //中间正文样式表
   .jf-tutorial-body {
-    height: 900px;
     width: 100%;
     background:rgba(245,245,245,0.6);
     padding:50px 0;
-
     .jf-tutorial-body-box{
-      height: 900px;
       width: 90%;
       margin:0 auto;
       background: #fff;
@@ -58,7 +55,7 @@ $lineColorLBlue:#C5D9E8;
       //中间正文--左侧导航条
       .jf-tutorial-body-left{
         width:11%;
-        height:900px;
+        //height:900px;
         //background:rgba(90,211,148,0.3);
         float: left;
         padding:0 2%;
@@ -81,19 +78,16 @@ $lineColorLBlue:#C5D9E8;
 
       //中间正文--右侧详细内容
       .jf-tutorial-body-right{
-        width:85%;
-        height:900px;
-        //background:rgba(50,12,12,0.1);
+        width:83%;
+        min-height: 450px;
         float: left;
-
+        padding-right: 2%;
         .apiComponentsDetail{
           padding:0 2%;
           .jf-devIntro-title{
             border-bottom: 1px solid $lineColorLBlue;
             height:36px;
           }
-
-
         };
         pre{
           margin: 15px 0;

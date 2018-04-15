@@ -12,10 +12,10 @@
       只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目。</p>
       <pre>
         <code>
-          > npm install vue-cli -g
-          > cd 目录路径
-          > vue init webpack 工程名字          <工程名字不能用中文>
-          > npm install
+    > npm install vue-cli -g
+    > cd 目录路径
+    > vue init webpack 工程名字          <工程名字不能用中文>
+    > npm install
         </code>
       </pre>
     <H3>标准开发</H3>
@@ -26,10 +26,21 @@
     <pre><code>
     import vueuijf from 'vueuijf' // 引入组件库
 
-    import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
-
-    Vue.use(VvUI) </code>
+    Vue.use(jfUI); </code>
     </pre>
+
+    <H3>单个组件按需使用</H3>
+    <p>可以局部注册所需的组件，适用于与其他框架组合使用的场景</p>
+    <pre><code>
+    import { jfButton } from 'vueuijf'
+
+    export default {
+      components: {
+        jfButton
+      }
+    } </code>
+    </pre>
+
   </div>
 
 </template>

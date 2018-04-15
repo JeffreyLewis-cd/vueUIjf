@@ -30,6 +30,9 @@
 </script>
 
 <style scoped>
+  .install-page{
+    /*height:430px;*/
+  }
 
 
 </style>
