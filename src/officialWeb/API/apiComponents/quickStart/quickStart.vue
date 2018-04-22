@@ -12,35 +12,50 @@
       只需几分钟即可创建并启动一个带热重载、保存时静态检查以及可用于生产环境的构建配置的项目。</p>
       <pre>
         <code>
-    > npm install vue-cli -g
-    > cd 目录路径
-    > vue init webpack 工程名字          <工程名字不能用中文>
-    > npm install
+          > npm install vue-cli -g
+          > cd 目录路径
+          > vue init webpack 工程名字
+          <工程名字不能用中文>
+            > npm install
         </code>
       </pre>
     <H3>标准开发</H3>
     <p>实际项目中，往往会使用 webpack，rollup 或者 gulp 的工作流，大多可以做到按需加载页面用到的组件，所以不推荐直接使用
       &lt;script &gt; 标签全局引入的方式使用。</p>
     <H3>全局组件使用</H3>
-    <p>可以在项目的入口文件中引入所有组件或所需组件</p>
+    <p>可以在项目的入口(main.js)文件中引入所有组件或所需组件</p>
     <pre><code>
-    import vueuijf from 'vueuijf' // 引入组件库
+      import vueuijf from 'vueuijf' // 引入组件库
 
-    Vue.use(jfUI); </code>
+      Vue.use(jfUI); </code>
     </pre>
 
     <H3>单个组件按需使用</H3>
-    <p>可以局部注册所需的组件，适用于与其他框架组合使用的场景</p>
+    <p>可以在项目的入口(main.js)文件中,局部注册所需的组件，适用于与其他框架组合使用的场景</p>
     <pre><code>
-    import { jfButton } from 'vueuijf'
+      import { jfButton } from 'vueuijf'
 
-    export default {
+      export default {
       components: {
-        jfButton
+      jfButton
       }
-    } </code>
+      } </code>
+    </pre>
+    <p>在模板中，用 &lt; jfButton &gt; &lt; /jfButton &gt; 自定义标签的方式使用组件</p>
+    <pre>
+      <code>
+      &lt;template&gt;
+        &lt;div&gt;
+          &lt;jfButton&gt;这是一个按钮&lt;/jfButton&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+      </code>
     </pre>
 
+
+    <H3>自定义主题</H3>
+    <p>vueUIjf 各个组件的样式变量都存放在 vueuijf/src/assets/css/apiStyle.scss 文件中。
+      用户可根据实际需要，自定义组件的样式</p>
   </div>
 
 </template>
