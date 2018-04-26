@@ -15,13 +15,16 @@
             <li v-for="(devItem,index) in devIntro" :key="index" class="jf-tutorial-ul-li"
              :class="{'jf-tutorial-ul-li-active':leftItem_intro==index}" @click="introItem(index)">{{devItem.title}}</li>
           </ul>
+          <div>
+            <router-link :to="/updateLog">点击测试</router-link>
+          </div>
 
         </div>
         <div  class="jf-tutorial-body-right">
           <Introduce v-show="leftItem_intro===0"></Introduce>
           <Install v-show="leftItem_intro===1"></Install>
           <QuickStart v-show="leftItem_intro===2"></QuickStart>
-
+          <router-view class="jf-tutorial-view"></router-view>
         </div>
 
       </div>
