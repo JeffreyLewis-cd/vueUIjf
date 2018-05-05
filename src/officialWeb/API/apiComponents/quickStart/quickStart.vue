@@ -3,7 +3,7 @@
     <H3 class="jf-devIntro-title">快速开始</H3>
     <H3>使用前准备</H3>
     <p>在使用之前，推荐学习 Vue 和 ES2015 ，并正确配置 Node.js v6.x 或以上版本 </p>
-    <p>VV-UI 基于 Vue.js 2.x+ 版本开发，所以有必要了解以下基础知识： </p>
+    <p>vueUIjf 基于 Vue.js 2.x+ 版本开发，所以有必要了解以下基础知识： </p>
     <ul>
       <li v-for="(pageItem,index) in singlePages" :key="index" v-html="pageItem.pageItem"></li>
     </ul>
