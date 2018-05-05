@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import navConf from '../nav.config.json'
 
 //UI组件官网-Introduce
-import OfficalWeb from '@/officialWeb/officialWeb'
-import Tutorial from '@/officialWeb/API/tutorial'
+//import OfficalWeb from '@/officialWeb/officialWeb'
+//import Tutorial from '@/officialWeb/API/tutorial'
 
 //组件开发
 import Button from '@/components/button/src/button'
