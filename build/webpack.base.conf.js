@@ -8,6 +8,9 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+const marked = require("marked");
+const renderer = new marked.Renderer();
+
 
 
 module.exports = {
@@ -74,7 +77,8 @@ module.exports = {
           {
             loader: "markdown-loader",
             options: {
-              /* your options here */
+              pedantic: true,
+              renderer
             }
           }
         ]
